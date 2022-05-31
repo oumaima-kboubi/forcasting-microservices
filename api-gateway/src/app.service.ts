@@ -70,4 +70,7 @@ export class AppService {
   getPlaningResult() {
     return this.planingClient.send({ cmd: 'get_planing' }, {});
   }
+  getPlaningforcast() {
+    return this.planingClient.send({ cmd: 'get_planingForcast' }, {});
+  }
 }
