@@ -15,6 +15,11 @@ import { AppService } from './app.service';
         transport: Transport.TCP,
         options: { port: 3001 },
       },
+      {
+        name: 'PLANING',
+        transport: Transport.TCP,
+        options: { port: 3002 },
+      },
     ]),
   ],
   controllers: [AppController],

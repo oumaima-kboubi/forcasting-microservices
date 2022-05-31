@@ -2,6 +2,7 @@ import { Body, Controller, Get, Post } from '@nestjs/common';
 import { AppService } from './app.service';
 import { CreateUserRequest } from './create-user-request.dto';
 import { ForcastProductRequest } from './forcast-product.dto';
+import { PlanningRequest } from './planing.dto';
 
 @Controller()
 export class AppController {
@@ -29,5 +30,15 @@ export class AppController {
   @Get('forcastResult')
   getForcastProductResult() {
     this.appService.getForcastProductResult();
+  }
+
+  @Post('planing')
+  planing(@Body() planingRequest: PlanningRequest) {
+    this.appService.planing(planingRequest);
+  }
+
+  @Get('planingResult')
+  getPlaningResult() {
+    this.appService.getPlaningResult();
   }
 }

@@ -25,13 +25,13 @@ export class AppService {
 
   handleForcastProduct(data: ForcastProductEvent) {
     console.log('handleForcastProduct - SECURITY', data);
-    console.log('i am handling forcat')
+    console.log('i am handling forcat');
     this.forcastProductTable.push({
       name: data.name,
       price: data.price,
       timestamp: new Date(),
     });
-    console.log('i pushed the data ')
+    console.log('i pushed the data ');
   }
 
   getForcastResult() {
