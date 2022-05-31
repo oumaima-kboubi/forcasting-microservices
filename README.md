@@ -26,6 +26,7 @@ The application is composed by:
 - **Forgot Password**
 
 <img src= "https://github.com/oumaima-kboubi/forcasting-microservices/blob/main/images/passwordRecovery.png" />
+
 - **Product Order forcast action view**
 
 <img src= "https://github.com/oumaima-kboubi/forcasting-microservices/blob/main/images/interface.png" />
