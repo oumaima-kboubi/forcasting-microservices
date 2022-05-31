@@ -23,5 +23,6 @@ export class AppService {
     console.log('Product Name:', data.name);
     console.log('Product Price:', data.price);
     console.log('Product Store:', data.store);
+    // check this ! 
   }
 }
